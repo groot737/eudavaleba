@@ -14,7 +14,11 @@
 
 <div class="container-fluid pt-5">
         <div class="text-center mb-4">
-            <h2 class="section-title px-5"><span class="px-2"><?= $title[0][0] ?></span></h2>
+            <?php if(isset($title)) { ?>
+                <h2 class="section-title px-5"><span class="px-2"><?= $title[0][0] ?></span></h2>
+            <?php } else { ?>
+                <h2 class="section-title px-5"><span class="px-2">პროდუქტები</span></h2>
+            <?php } ?>
         </div>
         <div class="row px-xl-5 pb-3">
 
