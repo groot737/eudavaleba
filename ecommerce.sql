@@ -26,7 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `categories`
 --
-
+CREATE DATABASE ecommerce;
+USE ecommerce;
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
